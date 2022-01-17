@@ -23,7 +23,7 @@ function NumericInput(props: NumericInputProps) {
   const defaultValue = Number(value);
   const formatter = useMemo(
     () =>
-      new Intl.NumberFormat('pt-BR', {
+      new Intl.NumberFormat('en-US', {
         minimumFractionDigits: precision,
         maximumFractionDigits: precision
       }),
