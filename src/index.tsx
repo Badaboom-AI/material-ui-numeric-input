@@ -49,7 +49,16 @@ function NumericInput(props: NumericInputProps) {
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>): void {
     if (e.key === ' ') e.preventDefault();
-    if (e.ctrlKey || e.shiftKey || e.key === 'Backspace' || e.key === 'Enter' || e.key === 'Left' || e.key === 'ArrowLeft' || e.key === 'Right' || e.key === 'ArrowRight') return;
+    if (
+      e.ctrlKey ||
+      e.shiftKey ||
+      e.key === 'Backspace' ||
+      e.key === 'Enter' ||
+      e.key === 'Left' ||
+      e.key === 'ArrowLeft' ||
+      e.key === 'Right' ||
+      e.key === 'ArrowRight'
+    )
       return;
     if (!isNumber(e.key)) e.preventDefault();
   }
@@ -94,6 +103,7 @@ function NumericInput(props: NumericInputProps) {
   return (
     <TextField
       defaultValue={format(defaultValue)}
+      value={value ? format(value as any) : ''}
       {...inputProps}
       onKeyDown={handleKeyDown}
       onChange={handleChange}
