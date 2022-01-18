@@ -102,9 +102,9 @@ function NumericInput(props: NumericInputProps) {
 
   return (
     <TextField
+      {...inputProps}
       defaultValue={format(defaultValue)}
       value={value ? format(value as any) : ''}
-      {...inputProps}
       onKeyDown={handleKeyDown}
       onChange={handleChange}
     />
