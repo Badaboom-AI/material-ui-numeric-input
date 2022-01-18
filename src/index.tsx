@@ -99,11 +99,11 @@ function NumericInput(props: NumericInputProps) {
       props.onChange && props.onChange(newEvent);
     }
   }
-
+  console.log(inputProps, defaultValue);
   return (
     <TextField
+      defaultValue={format(defaultValue)}
       {...inputProps}
-      value={value ? format(value as any) : ''}
       onKeyDown={handleKeyDown}
       onChange={handleChange}
     />
