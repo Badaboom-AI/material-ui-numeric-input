@@ -27,7 +27,7 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/material": "^5.0.0",
-    "react": "^16.0.0"
+    "react": "*"
   },
   "devDependencies": {
     "@emotion/react": "^11.4.1",
