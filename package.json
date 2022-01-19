@@ -1,10 +1,10 @@
 {
-  "name": "material-ui-numeric-input",
+  "name": "material-ui-numeric-input-controlled",
   "version": "3.0.2",
   "description": "Numeric Input for interfaces built with Material-UI for React",
-  "author": "SampaioLeal",
+  "author": "devil1991",
   "license": "MIT",
-  "repository": "SampaioLeal/material-ui-numeric-input",
+  "repository": "Badaboom-AI/material-ui-numeric-input",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
