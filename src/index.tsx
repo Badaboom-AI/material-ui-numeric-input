@@ -99,7 +99,6 @@ function NumericInput(props: NumericInputProps) {
       props.onChange && props.onChange(newEvent);
     }
   }
-  console.log(inputProps, defaultValue);
   return (
     <TextField
       value={format(value as any)}
